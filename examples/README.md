@@ -13,6 +13,7 @@ If you wish to get to work on some of these items then fantastic! The process be
 2. In 'Issues' find the Use Case and let us know you're working on it!
 4. Start building a demo application using an implementation of ServiceWorker
 5. Document the process explaining:
+
 * What was easy
 * What was difficult
 * Behaviour of the ServiceWorker (did it do [a] what it was supposed to do and [b] what you logcally expected it would do?)
