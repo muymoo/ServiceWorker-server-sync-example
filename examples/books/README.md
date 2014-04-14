@@ -8,4 +8,5 @@ In this use case I suppose a user could want to download a whole book (e.g. for 
 * Download a portion of a book (e.g. chapter)
 * See books covers in a 'library'
 * See which books are cached and which are not.
+* User selects which books to download, and which not to
 

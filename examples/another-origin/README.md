@@ -1,0 +1,3 @@
+# Another Origin
+
+User clicks "read later" on an article, that article is cached along with a Google Maps image included on the page (which originates from another origin). This could be the case when a user is reading about an event or new venue on a travel website, and wants to read this later when offline. The google map would be wanted so the user could view the location of the place they are reading about. 

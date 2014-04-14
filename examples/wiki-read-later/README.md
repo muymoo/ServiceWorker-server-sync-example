@@ -27,4 +27,7 @@ This example will demonstrate how a site like Wikipedia could use the controller
 * User visits uncached article
     * Page requested from the server (normal request behaviour)
         * If fails due to network failure (no connection), friendly error message displayed, explaining the user is offline, listing article that are available offline
-* On navigate, if a check hasn’t been made for 10 minutes, look for updates to the bootstrap and page templates, update accordingly
+* On navigate, if a check hasn’t been made for 10 minutes, look for updates to the bootstrap and page templates, update accordingly.
+* User saves 99 articles for “offline reading” on a large site such as wikipedia. User adds article on “gravity” to their offline list. Want  to  cache that new article without re-requesting the other 99
+    *  User visits article on “Gravity” while offline, want to show cached   version straight away but request updates to the article without   requesting the other 99
+    * User selects “update all” from a menu, want to update cache for all 100 articles
