@@ -1,39 +1,37 @@
-<h2>ServiceWorker Design</h2>
+# Use-cases & Examples
 
-## What's Going On Here?
+This directory contains use cases and examples for ServiceWorker. It was constructed to ensure the spec captures use-cases & identify areas the API could cater for common patterns.
 
-ServiceWorkers (formerly Navigation Controllers) are a new system in browsers that provide event-driven scripts that run independent of web pages. They are similar to SharedWorkers except that their lifetime is different and they have access to domain-wide events such as network fetches.
+## Test Cases and Demos
 
-ServiceWorkers also have scriptable caches. Along with the ability to respond to network requests from certain web pages via script, this provides a way for applications to "go offline".
+The [W3C Web and Mobile Interest Group](https://www.w3.org/wiki/Mobile/Work) would like to support the work the ServiceWorker team by turning these use cases into real demo apps. We can then use these apps to test ServiceWorker, and provide feedback to the spec team to adjust things if necessary.
 
-ServiceWorkers aren't a new version of the [rightfully-loathed](http://alistapart.com/article/application-cache-is-a-douchebag) [HTML5 Application Cache](http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html). Instead, they are comprised of scriptable primitives that make it possible for application developers to build URL-friendly, always-available applications in a sane and layered way.
+### Process
+If you wish to get to work on some of these items then fantastic! The process below is a guideline to how to get started.
 
-To understand the design and how you might build apps with ServiceWorkers, see the [explainer document](https://github.com/slightlyoff/ServiceWorker/blob/master/explainer.md).
+1. Choose one of the use cases / examples, these are given in the directories of this directory [/examples](https://github.com/w3c-webmob/ServiceWorker/tree/master/examples).
+2. In 'Issues' find the Use Case and let us know you're working on it!
+4. Start building a demo application using an implementation of ServiceWorker
+5. Document the process explaining:
 
-For the nitty-gritty of the API, see [`service_worker.ts`](https://github.com/slightlyoff/ServiceWorker/blob/master/service_worker.ts), a [TypeScript](http://www.typescriptlang.org/) description of the major bits of the callable interface.
+* What was easy
+* What was difficult
+* Behaviour of the ServiceWorker (did it do [a] what it was supposed to do and [b] what you logcally expected it would do?)
+* Answer whether the ServiceWprker satisfied the use case
+* Anything else you think is relevant!
 
-[A web specification is being drafted](http://infrequently.org/14/ServiceWorker/spec/service_worker/) from the details captured in the [typescript file ](https://github.com/slightlyoff/ServiceWorker/blob/master/service_worker.ts) and the [resolved issued marked as `needs spec`](https://github.com/slightlyoff/ServiceWorker/issues?labels=needs+spec&page=1&state=closed).
+Documentation doesn't need to be too verbose! Just a short report will suffice. Once we have collected a good number of case examples we will send a Pull Requestto the main ServiceWorker repo. 
 
-## Building & Contributing to the Design
+## Implementations
+Implementations of ServiceWorker are given below. The spec and implementations are in a very early stage! You may find issues with implementations in that they may often change or produce strange results at first. We encourage everyone to submit bugs to the browser vendor in which they experience bugs.
 
-Most decisions regarding the API and finer points of the design are handled through issues in this repository. Feel free to open one if you don't see an obvious answer to your question in the [Explainer](explainer.md).
+* Chrome: Soon! Check at [chromestatus](http://www.chromestatus.com/features/6561526227927040)
+* Firefox: Soon!
 
-To make edits to the design, change the TypeScript file (`service_worker.ts`); the JavaScript file is built from it. Building the JS version yourself isn't essential, but here's how:
+No other browsers implement ServiceWorker as of 18/02/2014.
 
-Requirements:
+## What's next?
+After we have collected some use case demos and tests we will send a Pull Request to the main ServiceWorker repo so the ServiceWorker spec team can make any adjustments or feel content that they did an awesome job! It will be up to the ServiceWorker team how they go about making any adjustments or using the data that our demos / tests produced. 
 
-* [Node.js](http://nodejs.org/) v0.8.15+
-
-Installing dependencies:
-
-```sh
-# From the root of the project directory
-npm install
-```
-
-Building:
-
-```sh
-# From the root of the project directory
-make
-```
+## More Use Cases
+If you have more use cases please add them to this repo! Fork the repo, add a directory to the /examples/ directory complete with a README.md file explaining the use case in an much detail as you can. Then make a pull request!
