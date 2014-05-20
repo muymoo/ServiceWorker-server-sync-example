@@ -1,4 +1,4 @@
-# Use-cases & Examples
+# Use-cases & Examples for ServiceWorker
 
 This directory contains use cases and examples for ServiceWorker. It was constructed to ensure the spec captures use-cases & identify areas the API could cater for common patterns.
 
@@ -25,10 +25,10 @@ Documentation doesn't need to be too verbose! Just a short report will suffice. 
 ## Implementations
 Implementations of ServiceWorker are given below. The spec and implementations are in a very early stage! You may find issues with implementations in that they may often change or produce strange results at first. We encourage everyone to submit bugs to the browser vendor in which they experience bugs.
 
-* Chrome: Soon! Check at [chromestatus](http://www.chromestatus.com/features/6561526227927040)
+* Chrome: Behind a flag. Check at [chromestatus](http://www.chromestatus.com/features/6561526227927040)
 * Firefox: Soon!
 
-No other browsers implement ServiceWorker as of 18/02/2014.
+No other browsers implement ServiceWorker as of 20/05/2014.
 
 ## What's next?
 After we have collected some use case demos and tests we will send a Pull Request to the main ServiceWorker repo so the ServiceWorker spec team can make any adjustments or feel content that they did an awesome job! It will be up to the ServiceWorker team how they go about making any adjustments or using the data that our demos / tests produced. 
