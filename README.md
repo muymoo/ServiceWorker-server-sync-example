@@ -26,7 +26,7 @@ Documentation doesn't need to be too verbose! Just a short report will suffice. 
 Implementations of ServiceWorker are given below. The spec and implementations are in a very early stage! You may find issues with implementations in that they may often change or produce strange results at first. We encourage everyone to submit bugs to the browser vendor in which they experience bugs.
 
 * Chrome: Behind a flag. Check at [chromestatus](http://www.chromestatus.com/features/6561526227927040)
-* Firefox: Soon!
+* Firefox: [Build for Nightly](http://blog.nikhilism.com/2014/05/serviceworker-implementation-status-in-firefox.html)
 
 No other browsers implement ServiceWorker as of 20/05/2014.
 
